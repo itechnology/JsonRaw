@@ -31,4 +31,4 @@ Now you should have:
 
 
 ####Note:
-In this implementation size savings only start to kick in when you are dealing with collection containing more than 2 items
+In this implementation size savings only start to kick in when you are dealing with collections containing more than 2 items

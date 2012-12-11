@@ -24,7 +24,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
 
 
   			
-###JsonR Object (Implicit) 77 chars
+###JsonR (Implicit) 77 chars
           
     var object = [
                     "Jason",
@@ -34,7 +34,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
     ]; 
 					
 								
-###JsonR Object (With Hint) 89 chars
+###JsonR (With Hint) 89 chars
           
     var object = {
                 Type  : "User",
@@ -47,7 +47,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
     }; 
 					
 					
-###JsonR Object (Without Hint) 153 chars
+###JsonR (Without Hint) 153 chars
           
     var object = {
                 Keys:[
@@ -64,7 +64,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
 		]
     };  
 					
-###JsonR Object (Full Signature) 164 chars
+###JsonR (Full Signature) 164 chars
 
     var object = {
                 Type: "User",

@@ -2,9 +2,9 @@
 
 Simplified and lightweight protocol where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.
 
-####Size gains become linear with collections
+####Gains are in the order of +102% to -1% per/object, and become more obvious in collections
 
-###Classic JSON
+###JSON (classic) 156 chars
 
     var object = {
                 "Pseudo" : "Jason",
@@ -24,7 +24,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
 
 
   			
-###JsonR Object (Implicit)
+###JsonR Object (Implicit) 77 chars
           
     var object = [
                     "Jason",
@@ -34,7 +34,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
     ]; 
 					
 								
-###JsonR Object (With Hint)        
+###JsonR Object (With Hint) 89 chars
           
     var object = {
                 Type  : "User",
@@ -47,7 +47,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
     }; 
 					
 					
-###JsonR Object (Without Hint)         
+###JsonR Object (Without Hint) 153 chars
           
     var object = {
                 Keys:[
@@ -64,7 +64,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
 		]
     };  
 					
-###JsonR Object (Full Signature)
+###JsonR Object (Full Signature) 164 chars
 
     var object = {
                 Type: "User",

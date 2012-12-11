@@ -1,7 +1,7 @@
 ####This is just an old implemetation put here as proof of concept
 It works perfectly fine, but does not support recursion like the posted spec proposes.
 
-If you have build a client or server side library implementation that supports the JsonR Spec, please submit it to the project.
+If you build a client or server side implementation that supports the JsonR Spec, please submit it to the project
 
 1. Clone the project
 2. Add you implementation

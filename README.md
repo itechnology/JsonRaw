@@ -80,4 +80,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                             ["123.jpg", "222.jpg"],
                             [["Bob", "Hope"], ["Foo", "Bar"]]
 	         ]
-    };				
+    };		
+    
+    
+####Sample implementation & demo in JS/C# to follow soon

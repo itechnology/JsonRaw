@@ -1,4 +1,4 @@
-##Lightweight JSON protocol proposal: JsonR
+##Lightweight JSON protocol proposal: JsonR(aw)
 
 Simplified and lightweight protocol where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.
 
@@ -54,7 +54,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                            "Pseudo",
                            "Age",
                            "Photos",
-                           "Friends": ["FirstName", "LastName"]
+                           {"Friends": ["FirstName", "LastName"]}
                 ],
                 Values:[
                             "Jason",
@@ -72,7 +72,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                           "Pseudo",
                           "Age",
                           "Photos",
-                          "Friends": ["FirstName", "LastName"]
+                          {"Friends": ["FirstName", "LastName"]}
                  ],
                  Values:[
                             "Jason",
@@ -80,4 +80,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                             ["123.jpg", "222.jpg"],
                             [["Bob", "Hope"], ["Foo", "Bar"]]
 	         ]
-    };				
+    };		
+    
+    
+####Sample implementation & demo in JS/C# to follow soon

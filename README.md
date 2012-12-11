@@ -1,6 +1,6 @@
 Lightweight JSON protocol proposal: JsonR
 
-Simplified and lightweight protocole where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later add via implicit casting or via a hint to the objetcs real type.
+Simplified and lightweight protocole where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.
 
 Size gains become linear with collections.
 

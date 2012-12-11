@@ -1,10 +1,10 @@
-Lightweight JSON protocol proposal: JsonR
+##Lightweight JSON protocol proposal: JsonR
 
-Simplified and lightweight protocole where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.
+Simplified and lightweight protocol where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.
 
-Size gains become linear with collections.
+####Size gains become linear with collections
 
-//Classic JSON
+###Classic JSON
 
     var object = {
                 "Pseudo" : "Jason",
@@ -19,12 +19,12 @@ Size gains become linear with collections.
                                     "FirstName": "Foo",
                                     "LastName" : "Bar"
                                 }
-                            ] 
+                ] 
     };
 
 
   			
-// JsonR Object (Implicit)
+###JsonR Object (Implicit)
           
     var object = [
                     "Jason",
@@ -34,50 +34,50 @@ Size gains become linear with collections.
     ]; 
 					
 								
-// JsonR Object (With Hint)        
+###JsonR Object (With Hint)        
           
     var object = {
                 Type  : "User",
                 Values:[
-                        "Jason",
-                        31,
-                        ["123.jpg", "222.jpg"],
-                        [["Bob", "Hope"], ["Foo", "Bar"]]
-				]
+                            "Jason",
+                            31,
+                            ["123.jpg", "222.jpg"],
+                            [["Bob", "Hope"], ["Foo", "Bar"]]
+                ]
     }; 
 					
 					
-// JsonR Object (Without Hint)         
+###JsonR Object (Without Hint)         
           
     var object = {
                 Keys:[
-                    "Pseudo",
-                    "Age",
-                    "Photos",
-                    "Friends": ["FirstName", "LastName"]
+                           "Pseudo",
+                           "Age",
+                           "Photos",
+                           "Friends": ["FirstName", "LastName"]
                 ],
                 Values:[
-                        "Jason",
-                        31,
-                        ["123.jpg", "222.jpg"],
-                        [["Bob", "Hope"], ["Foo", "Bar"]]
-				        ]
+                            "Jason",
+                            31,
+                            ["123.jpg", "222.jpg"],
+                            [["Bob", "Hope"], ["Foo", "Bar"]]
+		]
     };  
 					
-// JsonR Object (Full Signature)
+###JsonR Object (Full Signature)
 
     var object = {
                 Type: "User",
                 Keys:[
-                        "Pseudo",
-                        "Age",
-                        "Photos",
-                "Friends": ["FirstName", "LastName"]
-            ],
-            Values:[
-                    "Jason",
-                    31,
-                    ["123.jpg", "222.jpg"],
-                    [["Bob", "Hope"], ["Foo", "Bar"]]
-			    ]
+                          "Pseudo",
+                          "Age",
+                          "Photos",
+                          "Friends": ["FirstName", "LastName"]
+                 ],
+                 Values:[
+                            "Jason",
+                            31,
+                            ["123.jpg", "222.jpg"],
+                            [["Bob", "Hope"], ["Foo", "Bar"]]
+	         ]
     };				

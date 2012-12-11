@@ -54,7 +54,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                            "Pseudo",
                            "Age",
                            "Photos",
-                           "Friends": ["FirstName", "LastName"]
+                           {"Friends": ["FirstName", "LastName"]}
                 ],
                 Values:[
                             "Jason",
@@ -72,7 +72,7 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
                           "Pseudo",
                           "Age",
                           "Photos",
-                          "Friends": ["FirstName", "LastName"]
+                          {"Friends": ["FirstName", "LastName"]}
                  ],
                  Values:[
                             "Jason",

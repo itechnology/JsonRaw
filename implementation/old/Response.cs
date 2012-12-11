@@ -31,7 +31,7 @@ public class Response
 
         // Add values
         foreach (var u in users) {
-			response.Add(new ArrayList(u.Pseudo, u.Age));
+            response.Add(new ArrayList() { u.Pseudo, u.Age });
         }
         
         // Return JSON

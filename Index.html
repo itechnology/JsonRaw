@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JsonR Test</title>
+        
+        <script src="implementation/js/JsonR.js" type="text/javascript"></script>
+        <style>
+            body {
+                width: 920px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>JsonR Test</h2>
+
+        <div>Keys :: <span id="kSize"></span></div>
+        <textarea id="keys" cols="70" rows="5" onblur="GetLength('kSize', this)">["Name", "Age", "Photos", { "Friends": ["FirstName", "LastName"]}]</textarea>
+  
+        <div>Values :: <span id="vSize"></span></div>
+        <textarea id="values" cols="70" rows="5" onblur="GetLength('vSize', this)">[["Robert", 32, ["1.jpg", "2.jpg"], [["Bob", "Hope"], ["Mr", "T"]]],["Jane", 21, ["4.jpg", "5.jpg"], [["Foo", "Bar"], ["Lady", "Gaga"]]]]</textarea>
+        
+        <div>Result :: <span id="rSize">chars (0)</span></div>
+        <textarea id="result" cols="70" rows="5"></textarea>
+    
+        <div>
+            <button onclick="parse()">Parse</button>
+        </div>
+        
+        <script>
+            GetLength('kSize', document.getElementById("keys"));
+            GetLength('vSize', document.getElementById("values"));
+            
+            function GetLength(id, ele) {
+                document.getElementById(id).innerHTML = "chars (" + ele.value.length + ")";
+            }
+            
+            function parse() {
+                var keys   = eval(document.getElementById("keys").value);
+                var values = eval(document.getElementById("values").value);
+                
+                //var now = performance.now();
+                var jsonr = JSONR.parse(keys, values);
+                //var done = performance.now() - now;
+                //console.log(done);
+                var result = JSON.stringify(jsonr);
+                
+                document.getElementById("result").value    = result;
+                document.getElementById("rSize").innerHTML = "chars (" + result.length + ")";
+            }
+        </script>
+    </body>
+</html>
+

@@ -27,7 +27,7 @@ public class Response
 
 
         // Initialize keys
-		var response = new AjaxArray(new [] { "Pseudo", "Age" });
+        var response = new AjaxArray(new [] { "Pseudo", "Age" });
 
         // Add values
         foreach (var u in users) {

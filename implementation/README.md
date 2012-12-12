@@ -49,7 +49,7 @@
     var values = new [] { new object[] {"Robert", 32, new [] {"1.jpg", "2.jpg"}, new [] {new [] {"Bob", "Hope"}, new [] {"Mr", "T"}}}, new object[] {"Jane", 21, new [] {"4.jpg", "5.jpg"}, new [] {new [] {"Foo", "Bar"}, new [] {"Lady", "Gaga"}}}}
 
 
-### Expected Final Result C<notextile>#</notextile> (then to be returned to client as JSON string)
+### Expected Final Result (then to be returned to client as JSON string)
 	{
 	   Keys  : ["Name","Age","Photos",{"Friends":["FirstName","LastName"]}],
 	   Values: [["Robert",32,["1.jpg","2.jpg"],[["Bob","Hope"],["Mr","T"]]],["Jane",21,["4.jpg","5.jpg"],[["Foo","Bar"],["Lady","Gaga"]]]]

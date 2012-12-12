@@ -1,3 +1,7 @@
+Sample JS client-side deserializer now up. C# server-side serializer underways.
+
+[Try it](http://itechnology.github.com/JsonRaw)
+
 ##Lightweight JSON protocol proposal: JsonR(aw)
 
 Simplified and lightweight protocol where key/value pairs are either seperated and later recombined, or where keys can be completely ommited and later added via implicit casting or via a hint to the objetcs real type.

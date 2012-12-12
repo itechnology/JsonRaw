@@ -1,14 +1,15 @@
 ####This is just an old implemetation put here as proof of concept
-It works perfectly fine, but does not support recursion like the posted spec proposes.
 
-If you build a client or server side implementation that supports the JsonR Spec, please submit it to the project
+*I've been using this for years without issues and think it's now time to share, and even make a better version it*
+
+This version works perfectly fine, but does not support recursion like the posted spec proposes, and in ajax intensive sites you should see +40% bandwidth gains at least as far as ajax centric traffic is concerned.
+
+####If you build a client or server-side implementation that supports the JsonR Spec, please submit it to the project
 
 1. Clone the project
-2. Add you implementation
+2. Add your implementation
 3. Issue a pull request
-
-
-..more to come soon
+4. Smile !
 
 
 
@@ -30,4 +31,4 @@ Now you should have:
 
 
 ####Note:
-In this implementation size savings only start to kick in when you are dealing with collection containing more than 2 items
+In this implementation size savings only start to kick in when you are dealing with collections containing more than 2 items

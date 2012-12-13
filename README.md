@@ -1,4 +1,4 @@
-Sample JS client-side deserializer now up. C# server-side serializer underways.
+JS client-side deserializer now up. C# server-side serializer underways.
 
 [Try it](http://itechnology.github.com/JsonRaw)
 
@@ -86,5 +86,3 @@ Simplified and lightweight protocol where key/value pairs are either seperated a
 	         ]
     };		
     
-    
-####Sample implementation & demo in JS/C# to follow soon

@@ -23,7 +23,7 @@ Which should return:
     {"Values":[["Robert",41],["Teddy",35]],"Keys":["Pseudo","Age"]}
 
 
-Then call merge() while passing it your result.
+Then call mergeKeyValues(result)
 
 Now you should have:
 

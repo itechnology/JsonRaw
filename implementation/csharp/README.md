@@ -1,5 +1,5 @@
 ####If you build a client or server-side implementation that supports the JsonR Spec, please submit it to the project
- * Even if an implementation exists, please feel free to make it better, of add your personal twist on the implementation
+ * Even if an implementation exists, please feel free to make it better, or add your personal twist on the implementation
 
 1. Clone the project
 2. Add your implementation to the corresponding subfolder
@@ -7,13 +7,11 @@
 3. Issue a pull request
 4. Smile 
 
-
 ### Current Implementations
 
 1. itechnology
    * Sample C# parser implementation
    * Try it out, and then help make it better
-
 
 ### Sample Input C<notextile>#</notextile>
 
@@ -57,14 +55,11 @@
     var keys   = new object[] {"Name", "Age", "Photos", new { Friends = new [] {"FirstName", "LastName"}}};
     var values = new [] { new object[] {"Robert", 32, new [] {"1.jpg", "2.jpg"}, new [] {new [] {"Bob", "Hope"}, new [] {"Mr", "T"}}}, new object[] {"Jane", 21, new [] {"4.jpg", "5.jpg"}, new [] {new [] {"Foo", "Bar"}, new [] {"Lady", "Gaga"}}}}
 
-
 ### Expected Final Result (then to be returned to client as JSON string)
 	{
 	   Keys  : ["Name","Age","Photos",{"Friends":["FirstName","LastName"]}],
 	   Values: [["Robert",32,["1.jpg","2.jpg"],[["Bob","Hope"],["Mr","T"]]],["Jane",21,["4.jpg","5.jpg"],[["Foo","Bar"],["Lady","Gaga"]]]]
 	}
-
-
 
 ### Expected Result JS (once client applies recombination)
 	var users = [

@@ -1,5 +1,5 @@
 ####If you build a client or server-side implementation that supports the JsonR Spec, please submit it to the project
- * Even if an implementation exists, please feel free to make it better, of add your personal twist on the implementation
+ * Even if an implementation exists, please feel free to make it better, or add your personal twist on the implementation
 
 1. Clone the project
 2. Add your implementation to the corresponding subfolder

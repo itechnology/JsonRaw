@@ -6,6 +6,13 @@
 4. Smile !
 
 
+### Current Implementations
+
+1. JsonR
+ * Sample C# parser implementation
+ * Try it out, and then help make it better
+
+
 ### Sample Input C<notextile>#</notextile>
 
 	// Mockup class

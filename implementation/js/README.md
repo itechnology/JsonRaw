@@ -12,5 +12,12 @@ Thank you Peter !
 
 ---
 
-#####The spec is still in the need of the reverse implementation, that takes a JSON object and splits it into a seperate collection of keys & values. If you are up to it, please let me know !
+####If you build a client or server-side implementation that supports the JsonR Spec, please submit it to the project
+ * Even if an implementation exists, please feel free to make it better, of add your personal twist on the implementation
+
+1. Clone the project
+2. Add your implementation to the corresponding subfolder
+   * implementation/[programming-language]/[your-github-name]/yourfiles
+3. Issue a pull request
+4. Smile
 

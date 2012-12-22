@@ -36,7 +36,7 @@ namespace JsonR
         }
         #endregion
 
-        public object Parse(IList items, Style style = Style.Full)
+        public object ToJsonR(IList items, Style style = Style.Full)
         {
             var jsonR = new JsonR();
 
@@ -73,7 +73,7 @@ namespace JsonR
         /// Big kudos to him for this !
         /// </summary>
 
-        public void SplitKeyValues(IList source, List<object> keys, List<object> values)
+        private void SplitKeyValues(IList source, List<object> keys, List<object> values)
         {
             Type itemType             = GetListItemType(source.GetType());
             PropertyInfo[] properties = itemType.GetProperties();
@@ -132,6 +132,7 @@ namespace JsonR
                 }
             }
         }
+
         private Type GetListItemType(Type listType)
         {
             Type itemType = null;

@@ -1,9 +1,11 @@
 ####If you build a client or server-side implementation that supports the JsonR Spec, please submit it to the project
+ * Even if an implementation exists, please feel free to make it better, of add your personal twist on the implementation
 
 1. Clone the project
-2. Add your implementation
+2. Add your implementation to the corresponding subfolder
+   * implementation/[programming-language]/[your-github-name]/yourfiles
 3. Issue a pull request
-4. Smile !
+4. Smile
 
 
 ### Sample Input C<notextile>#</notextile>

@@ -9,7 +9,7 @@
 ### Current Implementations
 
 1. JsonR
- * Sample C# parser implementation
+ * Sample C# serializer implementation
  * Try it out, and then help make it better
 
 

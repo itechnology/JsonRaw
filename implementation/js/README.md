@@ -1,9 +1,9 @@
-###This is the client site JS implementation
+###This is the client-side JS implementation
 
     // Takes a collection of keys, and a collection of values as input and returns a classic JSON object
     JSONR.parse(keys, values)
     
-###[TestBed](http://itechnology.github.com/jsonraw/)
+###[TestBed](http://itechnology.github.com/JsonRaw/)
 
 ---
 The parse() implementation is the work of [Perter Olson](http://stackoverflow.com/users/546661/peter-olson), and was kindly contributed via StackOverflow

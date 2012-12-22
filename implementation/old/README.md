@@ -23,7 +23,7 @@ Which should return:
     {"Values":[["Robert",41],["Teddy",35]],"Keys":["Pseudo","Age"]}
 
 
-Then call merge() while passing it your result.
+Then call mergeKeyValues(result)
 
 Now you should have:
 
@@ -32,3 +32,7 @@ Now you should have:
 
 ####Note:
 In this implementation size savings only start to kick in when you are dealing with collections containing more than 2 items
+
+With the new JsonR Spec, size saving kick in with the very first object, and can be calcuated with:
+
+((KEYS LENGTH * COLLECTION ENTRIES) - TYPE HINT LENGTH) = TOTAL SAVINGS
